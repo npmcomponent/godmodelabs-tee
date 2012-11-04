@@ -1,15 +1,15 @@
 
-# mux
+# tee
 
-  Multiplex streams, like `tee(1)`.
+  `tee(1)`
 
 ## Usage
 
 ```javascript
-var mux = require('mux');
+var tee = require('tee');
 
 src
-  .pipe(mux(
+  .pipe(tee(
     dest1,
     dest2,
     dest3
@@ -20,14 +20,14 @@ src
 ## Installation
 
 ```bash
-$ npm install mux
+$ npm install tee
 # or
-$ component install juliangruber/mux
+$ component install godmodelabs/tee
 ```
 
 ## API
 
-### mux(destination, ...)
+### tee(destination, ...)
 
 Creates a new through Stream that pipes all incoming data to each
 `destination`-Stream.

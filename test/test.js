@@ -1,14 +1,14 @@
-var mux = require('../index');
+var tee = require('../index');
 var through = require('through');
 var Stream = require('stream');
 var expect = require('expect.js');
 
-describe('mux', function() {
+describe('tee', function() {
   it('should multiplex', function(done) {
     var called = 0;
     var dest1 = createWriteStream();
     var dest2 = createWriteStream();
-    var m = mux(dest1, dest2);
+    var m = tee(dest1, dest2);
     m.write('foo');
 
     function createWriteStream() {
@@ -25,14 +25,14 @@ describe('mux', function() {
       if (called++) done();
     });
 
-    var m = mux(dest);
+    var m = tee(dest);
     dest.pause();
     m.write('foo');
     dest.resume();
     m.write('bar');
   });
   it('should be a through stream', function(done) {
-    var m = mux();
+    var m = tee();
     expect(m.readable).to.be.ok();
 
     var dest = through(function(data) {

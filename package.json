@@ -1,7 +1,7 @@
 {
-  "name": "mux",
-  "version": "0.0.2",
-  "description": "Multiplex streams",
+  "name": "tee",
+  "version": "0.1.0",
+  "description": "tee(1)",
   "main": "index.js",
   "dependencies": {
     "through": "~1.1.1"
@@ -15,13 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juliangruber/mux"
+    "url": "https://github.com/godmodelabs/tee"
   },
   "keywords": [
-    "multiplex",
     "stream",
-    "streams",
-    "mux"
+    "tee"
   ],
   "author": "Julian Gruber <julian@juliangruber.com>",
   "license": "MIT"

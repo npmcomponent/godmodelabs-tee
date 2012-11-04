@@ -1,8 +1,8 @@
 {
-  "name": "mux",
-  "repo": "juliangruber/mux",
-  "description": "Multiplex streams",
-  "version": "0.0.2",
+  "name": "tee",
+  "repo": "godmodelabs/tee",
+  "description": "tee(1)",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
     "juliangruber/through": "1.1.0"
