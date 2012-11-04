@@ -20,7 +20,7 @@ src
 ## Installation
 
 ```bash
-$ npm install tee
+$ npm install tee-1
 # or
 $ component install godmodelabs/tee
 ```

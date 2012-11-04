@@ -1,6 +1,6 @@
 {
-  "name": "tee",
-  "version": "0.1.0",
+  "name": "tee-1",
+  "version": "0.1.1",
   "description": "tee(1)",
   "main": "index.js",
   "dependencies": {
