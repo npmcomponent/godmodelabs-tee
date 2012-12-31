@@ -1,7 +1,8 @@
-
 # tee
 
   `tee(1)`
+  
+[![Build Status](https://travis-ci.org/godmodelabs/tee.png?branch=master)](https://travis-ci.org/godmodelabs/tee)
 
 ## Usage
 
