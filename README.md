@@ -33,6 +33,8 @@ $ component install godmodelabs/tee
 Creates a new through Stream that pipes all incoming data to each
 `destination`-Stream.
 
+Emits `close` when all piped to streams closed.
+
 ## License
 
 (MIT)
