@@ -43,5 +43,25 @@ describe('tee', function() {
     m.pipe(dest);
     m.write('foo');
   });
+  it('should close', function(done) {
+    var ended = 0;
+    var dest1 = createWriteStream();
+    var dest2 = createWriteStream();
+    var m = tee(dest1, dest2);
+    m.on('close', function() {
+      expect(ended).to.be(2);
+      done();
+    });
+    m.write('foo');
+    m.end();
+    
+    function createWriteStream() {
+      return through(function(data) {
+        expect(data).to.be('foo');
+      }, function() {
+        ended++;
+      });
+    }
+  });
 });
 
