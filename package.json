@@ -1,26 +1,10 @@
 {
-  "name": "tee-1",
-  "version": "0.2.0",
+  "name": "godmodelabs-tee",
   "description": "tee(1)",
-  "main": "index.js",
+  "version": "0.2.0",
+  "keywords": [],
   "dependencies": {
-    "through": "~1.1.1"
+    "juliangruber-through": "git://github.com/npmcomponent/juliangruber-through.git"
   },
-  "devDependencies": {
-    "mocha": "*",
-    "expect.js": "*"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/godmodelabs/tee"
-  },
-  "keywords": [
-    "stream",
-    "tee"
-  ],
-  "author": "Julian Gruber <julian@juliangruber.com>",
   "license": "MIT"
 }

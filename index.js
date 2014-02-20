@@ -1,4 +1,4 @@
-var through = require('through');
+var through = require('juliangruber-through');
 var slice = [].slice;
 
 module.exports = mux;

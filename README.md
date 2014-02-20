@@ -1,3 +1,4 @@
+*This repository is a mirror of the [component](http://component.io) module [godmodelabs/tee](http://github.com/godmodelabs/tee). It has been modified to work with NPM+Browserify. You can install it using the command `npm install npmcomponent/godmodelabs-tee`. Please do not open issues or send pull requests against this repo. If you have issues with this repo, report it to [npmcomponent](https://github.com/airportyh/npmcomponent).*
 # tee
 
   `tee(1)`
